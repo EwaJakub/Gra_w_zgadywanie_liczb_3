@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/" method="POST" >
+        <a>Is number {{ctx.guess}}</a>
+        <a>Choose option: 'too big', 'too small', 'you guessed!'</a>
+            <input type="hidden" name="min" value={{ctx.min}}>
+            <input type="hidden" name="max" value={{ctx.max}}>
+            <input type="hidden" name="guess" value={{ctx.guess}}>
+            <input type="submit" name="comment" value="too big">
+            <input type="submit" name="comment" value="too small">
+            <input type="submit" name="comment" value="you guessed!">
+    </form>
+</body>
+</html>
